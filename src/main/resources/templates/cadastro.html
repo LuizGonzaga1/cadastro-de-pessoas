@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Cadastro de Pessoas</title>
+</head>
+<body>
+	<form action="#" th:action ="@{/cadastro}" th:object = "{pessoa}" metodo="post">
+		<table>
+			<tr>
+				<td>id*:</td>
+				<td><input type="text" th:field="*{id}"/></td>
+			</tr>
+			<tr>
+				<td>Nome*:</td>
+				<td><input type="text"th:field="*{nome}"/></td>
+			</tr>
+			<tr>
+				<td>E-mail*:</td>
+				<td><input type="text"th:field="*{email}"/></td>
+			</tr>
+			
+		</table>
+		
+		<input type="submit" value= "salvar"/>
+		<input type="reset" value= "Limpar"/>
+
+	</form>
+
+</body>
+</html>

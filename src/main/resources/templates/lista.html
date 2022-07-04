@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Lista de pessoas</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Nome</th>
+				<th>E-mail</th>
+				
+</tr>
+</thead>
+
+<tbody>
+	<tr th:each="ListaPessoa
+	<td th:text = "${listaPessoa.id}"></td>
+	<td th:text = "${listaPessoa.nome}"></td>
+	<td th:text = "${listaPessoa.fone}"></td>
+	<td th:text = "${listaPessoa.email}"></td>
+	</tr>
+	
+	</tbody>
+	</table>
+	<a heaf="/cadastro"> Adicionar nova Pessoa</a>
+</body>
+</html>
